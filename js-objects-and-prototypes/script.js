@@ -1,13 +1,10 @@
 "use strict";
 
-let cat = {name: "Fluffy", color : "White"}
+function Cat() {
+	this.name = 'Fluffy';
+	this.color = 'White';
+}
 
-cat.age = 3
+var cat = new Cat();
 
-// add speak function to cat object
-
-cat.speak = function () { display("Meooow!")}
-
-display(cat.name);
-display(cat.age);
-cat.speak();
+display(cat.name,cat.color);
