@@ -1,10 +1,17 @@
 "use strict";
-
-function Cat() {
-	this.name = 'Fluffy';
-	this.color = 'White';
-}
-
-var cat = new Cat();
+let cat = Object.create(Object.prototype,{
+	name: {
+		value : "Fluffy",
+		enumerable : true,
+		writable: true,
+		configurable: true
+	},
+	color : {
+		value : "White",
+		enumerable : true,
+		writable: true,
+		configurable: true
+	}
+})
 
 display(cat.name,cat.color);
