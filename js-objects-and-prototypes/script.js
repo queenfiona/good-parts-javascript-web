@@ -1,17 +1,16 @@
-"use strict";
-let cat = Object.create(Object.prototype,{
-	name: {
-		value : "Fluffy",
-		enumerable : true,
-		writable: true,
-		configurable: true
-	},
-	color : {
-		value : "White",
-		enumerable : true,
-		writable: true,
-		configurable: true
+// "use strict";
+class Cat{
+	constructor(name, color){
+		this.name = name;
+		this.color = color;
 	}
-})
+
+	speak = () =>{
+		display('Meeooow!!');
+	};
+}
+
+let cat = new Cat('Fluffy', 'White');
 
 display(cat.name,cat.color);
+cat.speak()
