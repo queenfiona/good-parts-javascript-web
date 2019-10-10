@@ -65,7 +65,7 @@ var projects = ['none', 'courses', 'training', 'project'];
 var priorities = [1, 2, 3, 4, 5];
 var users = ['Jon', 'Erica', 'Amanda', 'Nathan'];
 var completed = [true, false];
-
+// get current memory being used by the application
 var initialMemory = process.memoryUsage().heapUsed;
 
 for (var i = 0; i < 1000000; i++) {
